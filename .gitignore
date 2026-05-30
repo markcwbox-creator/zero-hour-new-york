@@ -1,6 +1,9 @@
 # Local editor / preview config
 .claude/
 
+# Wrangler (Cloudflare) local state
+.wrangler/
+
 # OS cruft
 Thumbs.db
 ehthumbs.db

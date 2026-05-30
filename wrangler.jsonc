@@ -1,0 +1,9 @@
+{
+  // Static-assets-only Worker for the Zero Hour: New York promo site.
+  // No server code — Cloudflare serves the files in this directory directly.
+  "name": "zero-hour-new-york",
+  "compatibility_date": "2025-05-01",
+  "assets": {
+    "directory": "."
+  }
+}
