@@ -22,8 +22,11 @@ isn't available yet. Search any file for `[ ` to find them.
 | **Author social links** | `author.html` | The X / IG / Goodreads / email links are `#` placeholders. |
 | **Author quote** | `author.html` | Use a real, attributable quote. |
 | **Reviews / ratings** | `praise.html`, `index.html` | Empty placeholders — add only genuine, attributable reviews. The listing showed no star rating. |
-| **Full excerpt (optional)** | `excerpt.html` | Currently uses the official description hook + a link to Amazon's free sample. Paste an authorized in-book passage if you want a full chapter on the page. |
 | **Book cover art** | `index.html` | The `.book` block is a CSS mockup; replace with the real cover image if desired. |
+
+All on-page placeholders are visually flagged with a **Placeholder** badge / dashed
+amber outline (CSS classes `.is-ph` and `.ph-badge`). Remove the class once you add
+real content.
 
 ## Things to keep honest before launch
 - Never add invented reviews, star ratings, or "average" figures.

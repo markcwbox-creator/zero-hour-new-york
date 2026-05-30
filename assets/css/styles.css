@@ -297,29 +297,6 @@ body::after {
 .socials a:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-3px); }
 
 /* ============================================================
-   EXCERPT page
-   ============================================================ */
-.excerpt {
-  max-width: 720px; margin: 0 auto;
-  font-size: 1.12rem; line-height: 1.95; color: #d7d4cc;
-}
-.excerpt .chapter-no { font-family: var(--display); text-transform: uppercase; letter-spacing: .4em; color: var(--accent); text-align:center; font-size:.85rem; }
-.excerpt .chapter-title { font-family: var(--display); text-transform: uppercase; text-align:center; font-size: clamp(2rem,5vw,3rem); margin-bottom: 40px; }
-.excerpt p:first-of-type::first-letter {
-  font-family: var(--display); float: left; font-size: 4.6rem; line-height: .8;
-  padding: 6px 14px 0 0; color: var(--accent);
-}
-.excerpt .scene-break { text-align:center; color: var(--faint); letter-spacing:.6em; margin: 34px 0; }
-.fade-end {
-  position: relative;
-}
-.fade-end::after {
-  content:""; position:absolute; left:0; right:0; bottom:0; height: 180px;
-  background: linear-gradient(0deg, var(--bg), transparent);
-  pointer-events: none;
-}
-
-/* ============================================================
    PRAISE / BUY page
    ============================================================ */
 .reviews { display: grid; grid-template-columns: repeat(2,1fr); gap: 22px; }
@@ -394,6 +371,34 @@ body::after {
 .reveal.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   .js .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ---------- placeholder markers ----------
+   Anything not yet verified is wrapped in .is-ph (a dashed amber box with a
+   "Placeholder" tag) or flagged inline with .ph-badge. Remove the class once
+   real content is added. */
+.is-ph { position: relative; border: 1px dashed var(--amber); border-radius: var(--radius); }
+.is-ph:not(.card):not(.author__photo) {
+  padding: 26px 20px 18px;
+  color: var(--muted);
+  font-style: italic;
+  background: rgba(245, 166, 35, .05);
+}
+.is-ph::before {
+  content: "Placeholder";
+  position: absolute; top: -10px; left: 14px; z-index: 3;
+  background: var(--amber); color: #1a1205;
+  font-family: var(--display); font-weight: 600; font-style: normal;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .6rem;
+  padding: 3px 9px; border-radius: 3px;
+}
+.card.is-ph, .author__photo.is-ph { border-style: dashed; border-color: var(--amber); }
+.ph-badge {
+  display: inline-block; vertical-align: middle;
+  background: var(--amber); color: #1a1205;
+  font-family: var(--display); font-weight: 600; font-style: normal;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .58rem;
+  padding: 2px 7px; border-radius: 3px; margin-right: 6px;
 }
 
 /* ============================================================

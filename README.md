@@ -1,15 +1,14 @@
 # Zero Hour: New York — Promotional Website
 
-A 5-page static marketing site for the thriller *Zero Hour: New York — The Beginning*.
-Hand-built HTML/CSS/JS — no build step, no dependencies, no framework.
+A 4-page static marketing site for the political thriller *Zero Hour: New York*
+by John O'Brien. Hand-built HTML/CSS/JS — no build step, no dependencies, no framework.
 
 ## Pages
 | File | Page |
 |------|------|
 | `index.html` | Home / landing (cinematic hero, hook, CTA) |
-| `story.html` | The Story — synopsis, themes, series note |
+| `story.html` | The Story — synopsis, characters, series note |
 | `author.html` | About the Author — bio, quote, other works |
-| `excerpt.html` | Read an Excerpt — styled Chapter One sample |
 | `praise.html` | Praise & Buy — reviews, buy options, newsletter, FAQ |
 
 ## View it locally
@@ -22,10 +21,11 @@ python -m http.server 8000
 ```
 
 ## Edit the content
-This is a **demo** filled with placeholder copy. See
-[`CONTENT-TO-REPLACE.md`](CONTENT-TO-REPLACE.md) for a checklist of every spot to
-swap in real book details — each is marked in the HTML with a `<!-- REPLACE: ... -->`
-comment. To change the Amazon link everywhere, find-and-replace `B0GCSYCY38`.
+The site is populated with **verified details from the Amazon listing**. A few
+items that aren't known yet are shown as **Placeholder** blocks (an amber dashed
+box / badge, styled via `.is-ph` / `.ph-badge`) — author bio, photo, social links,
+and reader reviews. See [`CONTENT-TO-REPLACE.md`](CONTENT-TO-REPLACE.md) for the
+full status list. To change the Amazon link everywhere, find-and-replace `B0GCSYCY38`.
 
 ## Customize the look
 All colors and fonts are CSS variables at the top of
@@ -34,7 +34,7 @@ the whole site, or `--display` / `--body` to swap fonts.
 
 ## Structure
 ```
-index.html  story.html  author.html  excerpt.html  praise.html
+index.html  story.html  author.html  praise.html
 assets/
   css/styles.css   # design system + responsive layout
   js/main.js       # mobile nav, scroll-reveal, demo newsletter form
