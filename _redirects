@@ -1,0 +1,4 @@
+# Cloudflare static-asset redirects
+# The excerpt page was removed — send its URLs to the home page.
+/excerpt        /   301
+/excerpt.html   /   301
