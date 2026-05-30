@@ -16,8 +16,10 @@ each marker to the file(s) it appears in.
 ## index.html (Home)
 - `REPLACE: title / subtitle` — the big hero title + "Book One" subtitle
 - `REPLACE: one-line hook / tagline` — the hero tagline sentence
-- `REPLACE: rating / format meta` — the `★★★★★ 4.8 · Kindle & Paperback` line
-- `REPLACE: featured blurb` — the social-proof quote strip
+- `REPLACE: rating / format meta` — the rating line. **Add a star rating/average
+  ONLY if it is real and verifiable** (e.g. a true Amazon/Goodreads figure).
+- `REPLACE: featured review` — the social-proof quote strip. Use only a genuine,
+  attributable quote you have permission to use.
 - `REPLACE: short premise paragraph` — the "Premise" section lede
 - (The 3 "Why Read" cards are generic — edit freely.)
 
@@ -41,7 +43,9 @@ each marker to the file(s) it appears in.
   `<p class="fade-end">` for the styled break + fade-out effect.
 
 ## praise.html (Praise & Buy)
-- `REPLACE: review quotes & attributions` — the 4 review cards
+- `REPLACE: real reviews only` — the review cards are now empty placeholders.
+  Add only genuine, attributable reviews/ratings. **Never ship invented reviews,
+  star ratings, or "average" figures — those are false advertising.**
 - `REPLACE: price` (Kindle) — `$4.99`
 - `REPLACE: price + link` (Paperback) — `$14.99` + its button URL
 - `REPLACE: price + link / or remove if N/A` (Audiobook) — remove the card if there's no audiobook
